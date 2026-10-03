@@ -336,7 +336,7 @@ kbd {
   overflow: hidden;
   border-radius: 3px;
   background: var(--film);
-  touch-action: none;
+  touch-action: pan-y;
   cursor: grab;
   user-select: none;
   aspect-ratio: 1600 / 898;

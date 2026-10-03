@@ -34,10 +34,14 @@
     box.addEventListener("pointerdown", (e) => {
       box.setPointerCapture(e.pointerId);
       box.classList.add("dragging");
-      fromEvent(e);
+      // A touch might be the start of a page scroll, so wait for a drag or a tap before moving the glass.
+      if (e.pointerType !== "touch") fromEvent(e);
     });
     box.addEventListener("pointermove", (e) => { if (box.classList.contains("dragging") || e.pointerType === "mouse") fromEvent(e); });
-    const stop = () => box.classList.remove("dragging");
+    const stop = (e) => {
+      if (e.type === "pointerup" && box.classList.contains("dragging")) fromEvent(e);
+      box.classList.remove("dragging");
+    };
     box.addEventListener("pointerup", stop);
     box.addEventListener("pointercancel", stop);
     box.addEventListener("keydown", (e) => {
@@ -136,7 +140,12 @@
         if (!e.isIntersecting) return;
         links.forEach((a) => a.removeAttribute("aria-current"));
         const a = map.get(e.target.id);
-        if (a) { a.setAttribute("aria-current", "true"); a.scrollIntoView({ block: "nearest", inline: "nearest" }); }
+        if (!a) return;
+        a.setAttribute("aria-current", "true");
+        // scrollIntoView would also scroll the page (the sticky bar sits inside scroll-padding), so only slide the bar.
+        const bar = a.closest("ol");
+        const dx = a.getBoundingClientRect().left - bar.getBoundingClientRect().left - (bar.clientWidth - a.offsetWidth) / 2;
+        bar.scrollBy({ left: dx, behavior: reduced ? "auto" : "smooth" });
       });
     }, { rootMargin: "-45% 0px -50% 0px" });
     map.forEach((_, id) => { const s = document.getElementById(id); if (s) io.observe(s); });
