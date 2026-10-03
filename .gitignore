@@ -1,0 +1,5 @@
+camsets/
+previews/
+.impeccable/
+.DS_Store
+__pycache__/

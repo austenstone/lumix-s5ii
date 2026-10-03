@@ -1,0 +1,621 @@
+<!doctype html>
+<!--
+DIRECTION CONTRACT
+Thesis: Austen's own contact sheet, marked up in red grease pencil by someone who knows the camera.
+World: darkroom paper, film edges, edge-print type, one red pencil. His frames are the only imagery.
+Type: Archivo (variable width) for everything; Permanent Marker only for the pencil's voice.
+Staging: an engraved elevation of the mode dial with a leader line; film strips as nav and frame.
+Mode: Read. Comprehension first, then make it worth staying in.
+Bans: stock photos, gradients, glass cards, icon grids, emoji, em dashes.
+Seed 5a16b568, Contact Sheet #3.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your S5II, marked up · LUMIX S5II field guide</title>
+<meta name="description" content="A field guide to the Panasonic LUMIX S5II built from one person's own contact sheet: the five settings to fix first, what each dial position is for, exposure, focus, looks, video and card care.">
+<meta name="theme-color" content="#11100f">
+<meta property="og:title" content="Your S5II, marked up">
+<meta property="og:description" content="Five fixes, a dial plan, and the reasons behind them. Built from 1,093 real frames.">
+<meta property="og:image" content="https://austenstone.github.io/lumix-s5ii/assets/img/dog-awb.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2311100f'/%3E%3Cellipse cx='16' cy='16' rx='11' ry='8' fill='none' stroke='%23c4261f' stroke-width='3.5' transform='rotate(-8 16 16)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Permanent+Marker&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the guide</a>
+
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <filter id="wax" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="3.5" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<nav class="edge-nav" aria-label="Sections">
+  <ol>
+    <li><a class="home" href="#top">S5II</a></li>
+    <li><a href="#fixes">Five fixes</a></li>
+    <li><a href="#frames">Your frames</a></li>
+    <li><a href="#dial">The dial</a></li>
+    <li><a href="#exposure">Exposure</a></li>
+    <li><a href="#focus">Focus</a></li>
+    <li><a href="#looks">Looks</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="#card">Card</a></li>
+    <li><a href="#field">Field card</a></li>
+  </ol>
+</nav>
+
+<main id="main">
+
+<header class="hero" id="top">
+  <div class="wrap hero-top">
+    <h1>Your S5II, <span class="marker">marked up.</span></h1>
+    <div>
+      <p class="lede">Your card held 1,093 JPEGs. Every one since June 23 was shot on the light-bulb white balance, which is why the last 286 came out blue. One button fixes that. Here's that fix, four more, and how to run this camera after that.</p>
+      <div class="actions">
+        <a class="btn" href="#fixes">Start with fix 1 <span aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="#field">Print the field card</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="film">
+    <div class="strip" role="list" aria-label="Recent frames from your card, all on Incandescent white balance">
+      <figure class="frame frame--mark" role="listitem">
+        <img src="assets/img/strip-dog.jpg" width="720" height="404" alt="Golden retriever on pavers, tinted cold blue">
+        <svg class="pencil-ring" viewBox="0 0 300 200" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <path d="M62 24 C124 4 232 6 276 30 C300 46 299 150 268 176 C220 197 82 198 30 177 C5 162 2 62 27 36 C42 21 84 11 132 15"/>
+        </svg>
+        <figcaption><span>P1003746</span><span>INC · f/6.3 · 1/25 · ISO 6400</span></figcaption>
+        <span class="marker marker-note" aria-hidden="true">fix this first: AWB</span>
+      </figure>
+      <figure class="frame" role="listitem">
+        <img src="assets/img/strip-palms.jpg" width="720" height="404" alt="Palm trees at dusk, tinted blue" loading="lazy">
+        <figcaption><span>P1003671</span><span>INC · f/3.2 · 1/60 · ISO 6400</span></figcaption>
+      </figure>
+      <figure class="frame" role="listitem">
+        <img src="assets/img/strip-lake.jpg" width="720" height="404" alt="Pond with swans under mountains, blue cast" loading="lazy">
+        <figcaption><span>P1004066</span><span>INC · f/2 · 1/2000 · ISO 100</span></figcaption>
+      </figure>
+      <figure class="frame" role="listitem">
+        <img src="assets/img/strip-sunrise.jpg" width="720" height="404" alt="Sunrise over water, colors pushed toward blue" loading="lazy">
+        <figcaption><span>P1003822</span><span>INC · f/6.3 · 1/250 · ISO 100</span></figcaption>
+      </figure>
+      <figure class="frame" role="listitem">
+        <img src="assets/img/strip-mountain.jpg" width="720" height="404" alt="Mountain ridge, blue cast" loading="lazy">
+        <figcaption><span>P1004061</span><span>INC · f/2 · 1/640 · ISO 100</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</header>
+
+<!-- ============ FIXES ============ -->
+<section class="sheet" id="fixes" aria-labelledby="fixes-h">
+  <div class="wrap">
+    <h2 id="fixes-h">Fix these five, in this order.</h2>
+    <p class="sheet-intro">About fifteen minutes with the camera in your hands. Tick each one as you go; this page remembers on this device.</p>
+    <p class="progress" aria-live="polite">0 of 5 done on the camera</p>
+
+    <ol class="fixes">
+      <li class="fix">
+        <h3>Put white balance back on Auto.</h3>
+        <div class="fix-body">
+          <p>Press <kbd>WB</kbd> on the top plate, turn a dial to <strong>AWB</strong>, half-press the shutter. There's no white balance item in the menus; it lives on that button.</p>
+          <p><span class="why">Why:</span> Incandescent tells the camera the light is orange tungsten, so it adds blue to cancel it. Outdoors there's no orange to cancel, so everything just goes blue. Auto reads the real light on every frame. (AWBc strips warmth from indoor light, AWBw keeps it. Plain AWB is the right default.)</p>
+
+          <div class="loupe-stage">
+            <div class="loupe-box" role="group" tabindex="0" aria-roledescription="before and after loupe" aria-label="Your photo on Incandescent. Inside the circle, the same photo on Auto white balance. Drag, or use the arrow keys, to move the circle.">
+              <img class="before" src="assets/img/dog-incandescent.jpg" width="1600" height="898" alt="Golden retriever on grey pavers, shot on Incandescent white balance: everything is tinted blue">
+              <img class="fixed" src="assets/img/dog-awb.jpg" width="1600" height="898" alt="Golden retriever on grey pavers, corrected to daylight white balance">
+              <div class="loupe-ring" aria-hidden="true"></div>
+              <span class="loupe-tag loupe-tag--l" aria-hidden="true">Incandescent</span>
+              <span class="loupe-tag loupe-tag--r" aria-hidden="true">Auto, in the glass</span>
+            </div>
+            <div class="loupe-controls">
+              <button class="chip" type="button" data-frame="dog" aria-pressed="true">The dog</button>
+              <button class="chip" type="button" data-frame="lake" aria-pressed="false">The lake</button>
+              <button class="chip" type="button" data-loupe-full aria-pressed="false">Fix the whole frame</button>
+            </div>
+            <p class="loupe-hint">Drag the glass around. The fix here is simulated from the JPEG; the camera does it properly, for free.</p>
+          </div>
+
+          <label class="done"><input type="checkbox" name="wb"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 13 l5 5 L21 4"/></svg></span>Done on the camera</label>
+        </div>
+      </li>
+
+      <li class="fix">
+        <h3>Shoot RAW+JPEG.</h3>
+        <div class="fix-body">
+          <p><span class="path"><b>MENU</b><i>›</i>Photo<i>›</i>Image Quality<i>›</i>Picture Quality<i>›</i><b>RAW+FINE</b></span></p>
+          <p><span class="why">Why:</span> a JPEG is the camera's final answer, with white balance and clipped highlights baked in. A RAW keeps what the sensor saw, so wrong white balance becomes a slider instead of a ruined photo. JPEG goes to Google Photos, RAW stays on the Mac as the negative.</p>
+          <div class="pair">
+            <figure class="print">
+              <img src="assets/img/lake-incandescent.jpg" width="1600" height="898" alt="Pond with swans and mountains, heavy blue cast" loading="lazy">
+              <figcaption><span class="exif">P1004066 · INC · f/2 · 1/2000</span><br>Straight out of the camera.</figcaption>
+            </figure>
+            <figure class="print">
+              <img src="assets/img/lake-jpeg-fix.jpg" width="1000" height="561" alt="The same pond after correcting the JPEG: the sky turns an odd green" loading="lazy">
+              <figcaption>Best rescue from the JPEG. Blue was maxed out in 86% of the upper sky, so pulling blue down turns it green. That data is gone; a RAW still has it.</figcaption>
+            </figure>
+          </div>
+          <p>It costs space: about 74 MB a shot, so roughly 200 shots on your 16 GB card. The counter on the screen is the real number.</p>
+          <label class="done"><input type="checkbox" name="raw"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 13 l5 5 L21 4"/></svg></span>Done on the camera</label>
+        </div>
+      </li>
+
+      <li class="fix">
+        <h3>Shoot the full 3:2 frame.</h3>
+        <div class="fix-body">
+          <p><span class="path"><b>MENU</b><i>›</i>Photo<i>›</i>Image Quality<i>›</i>Aspect Ratio<i>›</i><b>3:2</b></span></p>
+          <p><span class="why">Why:</span> the sensor is 3:2. 16:9 chops the top and bottom off and throws away 16% of your pixels, which happened on 803 of your 1,093 frames. You can always crop to widescreen later. You can't uncrop.</p>
+          <label class="done"><input type="checkbox" name="aspect"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 13 l5 5 L21 4"/></svg></span>Done on the camera</label>
+        </div>
+      </li>
+
+      <li class="fix">
+        <h3>Set the clock and time zone.</h3>
+        <div class="fix-body">
+          <p><span class="path"><b>MENU</b><i>›</i>Setup<i>›</i>Others<i>›</i><b>Clock Set</b></span> then <span class="path">Setup<i>›</i>Others<i>›</i><b>Time Zone</b></span></p>
+          <p><span class="why">Why:</span> your files are stamped UTC+1. A wrong zone puts photos on the wrong day, so your <code>~/Pictures/YYYY-MM-DD</code> folders and your Google Photos timeline sort wrong. Change the zone when you travel.</p>
+          <label class="done"><input type="checkbox" name="clock"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 13 l5 5 L21 4"/></svg></span>Done on the camera</label>
+        </div>
+      </li>
+
+      <li class="fix">
+        <h3>Update the firmware to 3.7.</h3>
+        <div class="fix-body">
+          <p><span class="why">Why:</span> you're on 3.0. Version 3.1 and later read the color tag on your looks (without it the camera treats them as V-Log), add look strength (opacity), 39 look slots and the LUMIX Lab app. Later versions add more subject detection and a shutter speed limiter. Do this before loading looks.</p>
+          <ol class="steps">
+            <li>Download the S5II firmware from <a href="https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/ff/dl/s5m2.html">Panasonic's download page</a> and unzip it.</li>
+            <li>Copy the <code>.bin</code> file to the top level of the card. Only one firmware file at a time.</li>
+            <li>Full battery, no cables plugged in, Wi-Fi and Bluetooth off.</li>
+            <li><span class="path"><b>MENU</b><i>›</i>Setup<i>›</i>Others<i>›</i>Firmware Version<i>›</i><b>Firmware Update</b></span>. Takes 3 to 5 minutes. Don't turn it off.</li>
+            <li>Check the same screen says 3.7.</li>
+          </ol>
+          <label class="done"><input type="checkbox" name="firmware"><span class="box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 13 l5 5 L21 4"/></svg></span>Done on the camera</label>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ FRAMES ============ -->
+<section class="sheet" id="frames" aria-labelledby="frames-h">
+  <div class="wrap">
+    <h2 id="frames-h">What your contact sheet says.</h2>
+    <p class="sheet-intro">1,093 JPEGs from April 2025 to October 2026, all on the 50mm. The pencil marks are the patterns worth breaking.</p>
+    <ul class="tally">
+      <li><b>286</b><span>on Incandescent WB</span></li>
+      <li><b>803</b><span>cropped to 16:9</span></li>
+      <li><b>206</b><span>at ISO 6400</span></li>
+      <li><b>188</b><span>slower than 1/60</span></li>
+      <li><b>91</b><span>at f/22</span></li>
+    </ul>
+
+    <div class="marked">
+      <article class="mark">
+        <figure class="print">
+          <img src="assets/img/church-f9-iso6400.jpg" width="1200" height="800" alt="Church facade lit at night, grainy" loading="lazy">
+          <span class="exif">P1001124 · f/9 · 1/30 · ISO 6400</span>
+        </figure>
+        <div>
+          <h3>Night, at f/9.</h3>
+          <span class="marker big">open up: f/2.8 = ISO 640</span>
+          <p>f/9 buys depth you don't need on a flat facade and costs over three stops of light. The camera paid for it with ISO 6400, which is the grain. At f/2.8 the same shot is ISO 640. At f/1.8, ISO 250. That's what C2 is for.</p>
+        </div>
+      </article>
+
+      <article class="mark">
+        <figure class="print print--tall">
+          <img src="assets/img/strip-dog2.jpg" width="720" height="1283" alt="Dog mid-movement, soft and blurred, blue cast" loading="lazy">
+          <span class="exif">P1003760 · f/6.3 · 1/15 · ISO 6400</span>
+        </figure>
+        <div>
+          <h3>A moving dog at 1/15.</h3>
+          <span class="marker big">f/1.8 = 1/180. or turn to C1.</span>
+          <p>1/15 can't freeze a dog. The aperture was the cause: at f/1.8 the same light gives about 1/180. With a Min. Shutter Speed floor (see Exposure) the camera wouldn't have dropped that low in the first place.</p>
+        </div>
+      </article>
+
+      <article class="mark">
+        <figure class="print">
+          <img src="assets/img/lisbon-f18.jpg" width="1200" height="674" alt="Sunlit Lisbon rooftops with a thin slice in focus" loading="lazy">
+          <span class="exif">P1003131 · f/1.8 · 1/5000 · ISO 100</span>
+        </figure>
+        <div>
+          <h3>Rooftops, wide open.</h3>
+          <span class="marker big">places want f/8</span>
+          <p>The opposite mistake. f/1.8 in full sun gave 1/5000 and a thin slice of focus. f/8 makes the whole city sharp and still gives 1/250. Wide open is for dim light and soft backgrounds.</p>
+        </div>
+      </article>
+
+      <article class="mark">
+        <figure class="print print--tall">
+          <img src="assets/img/sun-f16.jpg" width="1200" height="2138" alt="Sun as a crisp star over the horizon" loading="lazy">
+          <span class="exif">P1002736 · f/16 · 1/100 · ISO 100</span>
+        </figure>
+        <div>
+          <h3>Sunstar at f/16.</h3>
+          <span class="marker big">good call. f/22 isn't.</span>
+          <p>Small apertures turn the sun into a star, and f/16 is the place to stop. This lens is sharpest from f/2.8 to f/11; past f/16 diffraction softens everything. 91 of your frames were at f/22.</p>
+        </div>
+      </article>
+
+      <article class="mark">
+        <figure class="print">
+          <img src="assets/img/surf-2000.jpg" width="1200" height="675" alt="Surfer riding whitewater, the spray off her board frozen like a glass sheet" loading="lazy">
+          <span class="exif">P1002914 · f/4 · 1/2000 · ISO 100</span>
+        </figure>
+        <div>
+          <h3>Surf at 1/2000.</h3>
+          <span class="marker big">keeper. more of this.</span>
+          <p>Fast shutter froze the spray into a sheet of glass, f/4 kept the rider sharp, ISO stayed at base. Good light, right settings. Every section below is about getting this result on purpose.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIAL ============ -->
+<section class="sheet" id="dial" aria-labelledby="dial-h">
+  <div class="wrap">
+    <h2 id="dial-h">Live on A. Save the rest to C1, C2, C3.</h2>
+    <p class="sheet-intro">The mode dial is this camera's profile system. Set the camera up, save it to a C slot, and it comes back every time you turn to it. Tap a position.</p>
+
+    <div class="dial-wrap">
+      <figure class="dial-figure">
+        <svg class="dial-svg" viewBox="0 0 400 420" aria-hidden="true" focusable="false">
+          <defs>
+            <radialGradient id="face" cx="50%" cy="38%" r="65%">
+              <stop offset="0" stop-color="#2a2826"/>
+              <stop offset="1" stop-color="#0d0c0b"/>
+            </radialGradient>
+            <radialGradient id="cap" cx="45%" cy="35%" r="70%">
+              <stop offset="0" stop-color="#3a3733"/>
+              <stop offset="1" stop-color="#151413"/>
+            </radialGradient>
+          </defs>
+          <g class="dial-leader">
+            <path d="M216 22 H258"/>
+            <circle cx="262" cy="22" r="3"/>
+            <text x="270" y="23" class="dial-note">you are here</text>
+          </g>
+          <path class="dial-index" d="M188 12 H212 L200 32 Z"/>
+          <g class="dial-rotor">
+            <circle class="dial-knurl" cx="200" cy="210" r="168"/>
+            <circle cx="200" cy="210" r="160" fill="url(#face)" stroke="#34312d" stroke-width="1.5"/>
+            <circle cx="200" cy="210" r="98" fill="none" stroke="#2c2a27" stroke-width="1"/>
+            <g class="dial-pos" data-id="iA" transform="rotate(0 200 210)"><circle class="hit" cx="200" cy="85" r="25"/><text x="200" y="85">iA</text></g>
+            <g class="dial-pos" data-id="P" transform="rotate(36 200 210)"><circle class="hit" cx="200" cy="85" r="25"/><text x="200" y="85">P</text></g>
+            <g class="dial-pos" data-id="A" transform="rotate(72 200 210)"><circle class="hit" cx="200" cy="85" r="25"/><text x="200" y="85">A</text></g>
+            <g class="dial-pos" data-id="S" transform="rotate(108 200 210)"><circle class="hit" cx="200" cy="85" r="25"/><text x="200" y="85">S</text></g>
+            <g class="dial-pos" data-id="M" transform="rotate(144 200 210)"><circle class="hit" cx="200" cy="85" r="25"/><text x="200" y="85">M</text></g>
+            <g class="dial-pos" data-id="video" transform="rotate(180 200 210)"><circle class="hit" cx="200" cy="85" r="25"/><g class="icon"><rect x="185" y="77" width="21" height="16" rx="3"/><path d="M207 85 L218 78 V92 Z"/></g></g>
+            <g class="dial-pos" data-id="SQ" transform="rotate(216 200 210)"><circle class="hit" cx="200" cy="85" r="25"/><text x="200" y="85">S&amp;Q</text></g>
+            <g class="dial-pos" data-id="C1" transform="rotate(252 200 210)"><circle class="hit" cx="200" cy="85" r="25"/><text x="200" y="85">C1</text></g>
+            <g class="dial-pos" data-id="C2" transform="rotate(288 200 210)"><circle class="hit" cx="200" cy="85" r="25"/><text x="200" y="85">C2</text></g>
+            <g class="dial-pos" data-id="C3" transform="rotate(324 200 210)"><circle class="hit" cx="200" cy="85" r="25"/><text x="200" y="85">C3</text></g>
+          </g>
+          <circle cx="200" cy="210" r="56" fill="url(#cap)" stroke="#45413c" stroke-width="1.5"/>
+          <circle cx="200" cy="210" r="44" fill="none" stroke="#24221f" stroke-width="1"/>
+        </svg>
+        <div class="dial-buttons" role="group" aria-label="Pick a mode">
+          <button class="chip" type="button" data-dial="iA" aria-pressed="false">iA</button>
+          <button class="chip" type="button" data-dial="P" aria-pressed="false">P</button>
+          <button class="chip" type="button" data-dial="A" aria-pressed="true">A</button>
+          <button class="chip" type="button" data-dial="S" aria-pressed="false">S</button>
+          <button class="chip" type="button" data-dial="M" aria-pressed="false">M</button>
+          <button class="chip" type="button" data-dial="video" aria-pressed="false">Video</button>
+          <button class="chip" type="button" data-dial="SQ" aria-pressed="false">S&amp;Q</button>
+          <button class="chip" type="button" data-dial="C1" aria-pressed="false">C1</button>
+          <button class="chip" type="button" data-dial="C2" aria-pressed="false">C2</button>
+          <button class="chip" type="button" data-dial="C3" aria-pressed="false">C3</button>
+        </div>
+      </figure>
+
+      <div class="readout" tabindex="-1" aria-live="polite">
+        <div class="label">A</div>
+        <div class="name">Aperture priority</div>
+        <span class="marker">home base</span>
+        <p>You choose the aperture, which is the look. The camera chooses shutter and ISO. With a Min. Shutter Speed floor it raises ISO before the shutter gets slow enough to blur.</p>
+        <dl><dt>Aperture</dt><dd>Start at f/2.8. f/1.8 for dim light, f/8 for places.</dd><dt>ISO</dt><dd>Auto</dd><dt>Min. shutter</dt><dd>1/125</dd><dt>Focus</dt><dd>Lever on C, Full Area + Human detection</dd><dt>Files</dt><dd>AWB, RAW+FINE, 3:2</dd></dl>
+      </div>
+    </div>
+
+    <div class="two">
+      <div>
+        <h3>Save a C slot</h3>
+        <ol class="steps">
+          <li>Turn to <strong>A</strong> and set it up the way the A readout says.</li>
+          <li>C3 holds three sub-slots out of the box. Make it four: <span class="path">Setup<i>›</i>Setting<i>›</i>Custom Mode Settings<i>›</i><b>Limit No. of Custom Mode</b></span>.</li>
+          <li><span class="path">Setup<i>›</i>Setting<i>›</i><b>Save to Custom Mode</b></span>, pick C1. Repeat for C2 and C3-1 through C3-4. Your A setup is now copied everywhere.</li>
+          <li>Turn to each C slot, change only what its readout lists, and save it back to the same slot.</li>
+          <li>Name them: <span class="path">Custom Mode Settings<i>›</i><b>Edit Title</b></span>. ACTION, LOWLIGHT and so on show on screen when you turn the dial.</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Know the catches</h3>
+        <p>A C slot is a snapshot. Change something while you're on C1 and it snaps back the next time you turn the dial. Change A and it stays.</p>
+        <p>Physical controls aren't saved. The drive dial (top left, for burst) and the focus lever (back) stay wherever you leave them, so flip them yourself.</p>
+        <p class="verify">Positions are shown in the order the manual lists them; your dial's engraving is the reference.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="application/json" id="dial-data">
+  [
+    {"id":"iA","label":"iA","name":"Intelligent Auto","note":"hand it to a stranger","what":"The camera picks everything, including the scene. Fine when someone else is taking your picture. You'll outgrow it in a day.","rows":[["Use for","Someone else holding the camera"],["You control","Almost nothing. That's the point."]]},
+    {"id":"P","label":"P","name":"Program","note":"auto with an override","what":"The camera picks aperture and shutter; turning a dial shifts the pair. On a fast prime, A almost always beats it.","rows":[["Use for","Snapshots when you can't think"],["Skip it","When the background matters"]]},
+    {"id":"A","label":"A","name":"Aperture priority","note":"home base","what":"You choose the aperture, which is the look. The camera chooses shutter and ISO. With a Min. Shutter Speed floor it raises ISO before the shutter gets slow enough to blur.","rows":[["Aperture","Start at f/2.8. f/1.8 for dim light, f/8 for places."],["ISO","Auto"],["Min. shutter","1/125"],["Focus","Lever on C, Full Area + Human detection"],["Files","AWB, RAW+FINE, 3:2"]]},
+    {"id":"S","label":"S","name":"Shutter priority","note":"for things that move","what":"You choose the shutter speed and the camera picks aperture and ISO. Use it when blur is the enemy and the background doesn't matter.","rows":[["Running dog","1/1000"],["Kids, sport","1/500"],["Silky water","1/4, camera on something solid"]]},
+    {"id":"M","label":"M","name":"Manual","note":"easy with Auto ISO","what":"You set aperture and shutter. Leave ISO on Auto and the camera still handles brightness, and exposure compensation still works. Fixed ISO is for tripods, flash and night skies.","rows":[["Use for","Flash, long exposures, consistent sequences"],["Trick","Auto ISO in M locks the look and the blur, keeps brightness automatic"]]},
+    {"id":"video","label":"Video","name":"Creative Video","note":"the movie mode","what":"Video with full P, A, S or M exposure control. Pick M so brightness doesn't pump mid-shot, and set the shutter to double the frame rate.","rows":[["Exposure","M, 1/60 at 30p"],["ISO","Auto, or fixed for steady clips"],["Format","4K 29.97p, 10-bit, 150 Mbps"],["Card","V30 is enough"]]},
+    {"id":"SQ","label":"S&amp;Q","name":"Slow &amp; Quick","note":"real slow motion","what":"Records at one frame rate and plays at another. Shoot 120 fps, play at 30: four times slower. Full HD goes up to 180 fps.","rows":[["Slow-mo","FHD 120 fps"],["Slower","FHD 180 fps"],["4K up to 60 fps","Needs the APS-C crop"]]},
+    {"id":"C1","label":"C1","name":"ACTION","note":"dogs, surf, kids","what":"M with Auto ISO: you lock a shutter fast enough to freeze motion and an aperture with some depth, the camera handles brightness. Flip the drive dial to burst and the lever to C yourself; C1 can't move physical controls.","rows":[["Mode","M at 1/1000, f/2.8"],["ISO","Auto"],["Focus","Tracking + Animal or Human detection"],["Drive","H burst on the drive dial, about 9 fps"]]},
+    {"id":"C2","label":"C2","name":"LOWLIGHT","note":"night, indoors, no flash","what":"Wide open so ISO stays as low as it can. This is the fix for the church at f/9. AWBw keeps the warm glow of lamps instead of neutralizing it.","rows":[["Mode","A at f/1.8"],["ISO","Auto, upper limit 12800"],["Min. shutter","1/100"],["WB","AWBw"]]},
+    {"id":"C3","label":"C3","name":"LOOKS","note":"your film stocks","what":"Save the A setup four times, each with a different look as its Photo Style. Turn to C3 and pick the stock from the list.","rows":[["C3-1","WARM400"],["C3-2","CHROME"],["C3-3","FADED"],["C3-4","GOLD200, after raising the limit to 4"]]}
+  ]
+  </script>
+</section>
+
+<!-- ============ EXPOSURE ============ -->
+<section class="sheet" id="exposure" aria-labelledby="exposure-h">
+  <div class="wrap">
+    <h2 id="exposure-h">Aperture is the look. Shutter is the blur. ISO is the price.</h2>
+    <p class="sheet-intro">On A you only pick one of the three. Pick the aperture for what should be sharp, and set two limits once so the camera can't make the expensive choices for you.</p>
+
+    <div class="ring" role="region" aria-label="Aperture guide for the 50mm f/1.8" tabindex="0">
+      <ol>
+        <li><span class="tick" aria-hidden="true"></span><span class="stop">f/1.8</span><span class="use">Night, indoors, soft backgrounds. The dog in the evening.</span></li>
+        <li><span class="tick" aria-hidden="true"></span><span class="stop">f/2.8</span><span class="use">People, street at night. Sharper than 1.8, nearly as bright.</span></li>
+        <li><span class="tick" aria-hidden="true"></span><span class="stop">f/4</span><span class="use">Two people, both in focus.</span></li>
+        <li><span class="tick" aria-hidden="true"></span><span class="stop">f/5.6</span><span class="use">Groups, street in daylight.</span></li>
+        <li><span class="tick" aria-hidden="true"></span><span class="stop">f/8</span><span class="use">Landscapes and cities. Everything sharp.</span></li>
+        <li><span class="tick" aria-hidden="true"></span><span class="stop">f/11</span><span class="use">Deep scenes, near to far. Still sharp.</span></li>
+        <li><span class="tick" aria-hidden="true"></span><span class="stop">f/16</span><span class="use">Sunstars only. Softening starts.</span></li>
+        <li><span class="tick" aria-hidden="true"></span><span class="stop">f/22</span><span class="use">Diffraction mush. 91 of your frames.</span></li>
+      </ol>
+    </div>
+    <p class="ring-caption">The S 50mm f/1.8 is sharpest from f/2.8 through f/11, per <a href="https://www.photographyblog.com/reviews/panasonic_lumix_s_50mm_f1_8_review/sharpness_1">Photography Blog's test</a>. Past f/16, diffraction softens everything.</p>
+
+    <div class="two">
+      <div>
+        <h3>Set a shutter floor</h3>
+        <p><span class="path"><b>MENU</b><i>›</i>Photo<i>›</i>Image Quality<i>›</i>Min. Shutter Speed<i>›</i><b>1/125</b></span></p>
+        <p>With Auto ISO, the camera keeps the shutter at 1/125 or faster and raises ISO instead. A little grain beats a blurry photo every time. Works in P and A. Your 188 frames slower than 1/60 would have traded blur for grain.</p>
+      </div>
+      <div>
+        <h3>Too bright, too dark</h3>
+        <p>Press <kbd>+/−</kbd> on the top plate and turn a dial. ±5 stops for photos, ±3 for video. If a bright sky is washing out, try −1.</p>
+        <p>Make it visible: <span class="path">Custom<i>›</i>Monitor / Display (Photo)<i>›</i><b>Histogram</b></span> and <b>Blinking Highlights</b> in the same menu. Blinking areas on playback are blown out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOCUS ============ -->
+<section class="sheet" id="focus" aria-labelledby="focus-h">
+  <div class="wrap">
+    <h2 id="focus-h">Let the camera find the eye.</h2>
+    <p class="sheet-intro">Focus is three physical controls and one choice. Get these right and the S5II tracks faces and dogs on its own.</p>
+    <div class="two">
+      <div>
+        <ol class="steps">
+          <li><strong>Focus lever on the back to C.</strong> AFC keeps focusing while you half-press, so a moving subject stays sharp. S locks once, for things that sit still. MF is manual.</li>
+          <li><strong>Press <kbd>[⊡] AF mode</kbd> and pick Tracking</strong> for moving subjects or Full Area for people. Turn detection on in that same screen and set Detecting Subject to Human or Animal.</li>
+          <li><strong>The joystick moves the focus box</strong> when you want to choose the spot yourself.</li>
+          <li><strong>Optional: back-button focus.</strong> <span class="path">Custom<i>›</i>Focus/Shutter<i>›</i>Shutter AF<i>›</i><b>OFF</b></span>. Now <kbd>AF ON</kbd> focuses and the shutter only fires. Focus once on a still subject and recompose freely.</li>
+        </ol>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <caption class="sr-only">Focus settings by subject</caption>
+          <thead><tr><th scope="col">Subject</th><th scope="col">Lever</th><th scope="col">AF mode</th></tr></thead>
+          <tbody>
+            <tr><td>Dog, kids, surf</td><td>C</td><td>Tracking + Animal or Human</td></tr>
+            <tr><td>People posing</td><td>C</td><td>Full Area + Human</td></tr>
+            <tr><td>Buildings, landscapes</td><td>S</td><td>1-Area</td></tr>
+            <tr><td>Through glass or a fence</td><td>S</td><td>Pinpoint, or MF</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOOKS ============ -->
+<section class="sheet" id="looks" aria-labelledby="looks-h">
+  <div class="wrap">
+    <h2 id="looks-h">Four film stocks, already on your card.</h2>
+    <p class="sheet-intro">A look is a LUT: a color recipe the camera bakes into the JPEG. The RAW stays neutral, so a look you hate later costs you nothing.</p>
+
+    <div class="looks">
+      <figure class="print">
+        <img id="look-img" src="assets/img/look-base.jpg" width="1000" height="561" alt="Lisbon rooftops with the Natural look">
+        <figcaption id="look-cap">Natural, no look. The base every look is built on.</figcaption>
+      </figure>
+      <div>
+        <ul class="look-list">
+          <li><button class="look-btn" type="button" data-look="base" data-cap="Natural, no look. The base every look is built on." aria-pressed="true"><span class="n">Natural</span><span class="d">The base. No look applied.</span><span class="o">Base</span></button></li>
+          <li><button class="look-btn" type="button" data-look="warm400" data-cap="WARM400: soft contrast, warm highlights, slightly muted. Easy on skin." aria-pressed="false"><span class="n">WARM400</span><span class="d">Soft, warm highlights. Portrait film.</span><span class="o">C3-1</span></button></li>
+          <li><button class="look-btn" type="button" data-look="chrome" data-cap="CHROME: hard contrast, low saturation, cool shadows. Streets and buildings." aria-pressed="false"><span class="n">CHROME</span><span class="d">Hard contrast, muted, cool shadows.</span><span class="o">C3-2</span></button></li>
+          <li><button class="look-btn" type="button" data-look="faded" data-cap="FADED: lifted blacks and quiet color. A matte print." aria-pressed="false"><span class="n">FADED</span><span class="d">Lifted blacks, quiet color. Matte.</span><span class="o">C3-3</span></button></li>
+          <li><button class="look-btn" type="button" data-look="gold200" data-cap="GOLD200: warm and saturated with punchy contrast. Summer." aria-pressed="false"><span class="n">GOLD200</span><span class="d">Warm, saturated, punchy. Summer.</span><span class="o">C3-4</span></button></li>
+        </ul>
+        <div class="dl" aria-label="Download the look files">
+          <a href="luts/WARM400.cube" download>WARM400.cube</a>
+          <a href="luts/CHROME.cube" download>CHROME.cube</a>
+          <a href="luts/FADED.cube" download>FADED.cube</a>
+          <a href="luts/GOLD200.cube" download>GOLD200.cube</a>
+        </div>
+        <p class="verify">Previews are rendered on a Mac from a corrected JPEG, so they're close, not exact.</p>
+      </div>
+    </div>
+
+    <div class="two">
+      <div>
+        <h3>Load them (after firmware 3.7)</h3>
+        <ol class="steps">
+          <li>The four <code>.cube</code> files are already on the top level of your card.</li>
+          <li><span class="path">Custom<i>›</i>Image Quality<i>›</i><b>LUT Library</b></span>, pick an empty slot, <b>Load</b>, Card Slot 1, pick the file. Repeat for all four.</li>
+          <li><span class="path">Photo<i>›</i>Image Quality<i>›</i><b>Photo Style</b></span>, pick My Photo Style 1, base Natural, set its LUT to the look and its opacity to taste. One My Photo Style per look.</li>
+          <li>Save each into its C3 slot as described in <a href="#dial">the dial</a>.</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Why they're built on Natural</h3>
+        <p>Each file is tagged <code>#LUMIXPHOTOSTYLE NAT</code> under its title line. Firmware 3.1 and later read that tag and start from Natural. An untagged file gets treated as V-Log, which is why loading looks before the update is a waste.</p>
+        <p>Regenerate or tweak them on the Mac with <code>./lumix.py luts</code> and push to the card with <code>./lumix.py push</code>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO ============ -->
+<section class="sheet" id="video" aria-labelledby="video-h">
+  <div class="wrap">
+    <h2 id="video-h">Video: three settings and one rule.</h2>
+    <p class="sheet-intro">Turn the dial to the movie camera (Creative Video) and use M. All four run fine on a V30 card. Most of what makes footage look good is the shutter rule below.</p>
+    <div class="table-wrap">
+      <table>
+        <caption class="sr-only">Video recipes</caption>
+        <thead><tr><th scope="col">Shooting</th><th scope="col">Dial</th><th scope="col">Setting</th></tr></thead>
+        <tbody>
+          <tr><td>Everyday</td><td>Creative Video, M</td><td>MOV 4K 29.97p, 4:2:0 10-bit, 150 Mbps</td></tr>
+          <tr><td>Smooth motion, 2× slow-mo</td><td>Creative Video, M</td><td>MOV 4K 59.94p, 4:2:0 10-bit, 200 Mbps (APS-C crop)</td></tr>
+          <tr><td>Real slow motion</td><td>S&amp;Q</td><td>FHD 120 or 180 fps</td></tr>
+          <tr><td>Heavy color grading</td><td>Creative Video, M</td><td>MOV 4K 29.97p, 4:2:2 10-bit, V-Log</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="two">
+      <div>
+        <h3>Shutter at double the frame rate</h3>
+        <p>1/60 at 30p, 1/125 at 60p. That's the motion blur your eye reads as "film." In daylight at f/1.8 it overexposes, and there's no built-in ND, so carry a 67 mm variable ND filter for this lens.</p>
+      </div>
+      <div>
+        <h3>The rest</h3>
+        <p><strong>Stabilization:</strong> body I.S. is always working. Add E-Stabilization (Video) when walking, Boost I.S. (Video) for still handheld shots.</p>
+        <p><strong>Color:</strong> Standard or Natural if you won't grade. V-Log only if you will; it looks flat until you do.</p>
+        <p><strong>Space:</strong> 150 Mbps is about 14 minutes on your 16 GB card and nearly two hours on a 128 GB one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARD ============ -->
+<section class="sheet" id="card" aria-labelledby="card-h">
+  <div class="wrap">
+    <h2 id="card-h">Copy it off. Check it. Then wipe it in the camera.</h2>
+    <p class="sheet-intro">Your card is empty now: all 1,275 files were matched byte for byte against <code>~/Pictures</code> before anything was deleted. It wasn't formatted. Next time, this is the routine.</p>
+    <div class="two">
+      <div>
+        <h3>After every shoot</h3>
+        <ol class="steps">
+          <li><strong>Use a card reader.</strong> Faster than USB from the camera, and it doesn't drain the battery.</li>
+          <li>Copy into <code>~/Pictures/YYYY/YYYY-MM-DD</code>, RAW (<code>.RW2</code>) next to its JPEG.</li>
+          <li>JPEGs to Google Photos. RAWs stay on the Mac as your negatives.</li>
+          <li>Check the counts match, then format in the camera: <span class="path">Setup<i>›</i>Card/File<i>›</i><b>Card Format</b></span>. Formatting in the camera keeps the card the way the S5II expects it.</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Back up your setup</h3>
+        <p>Once the dial is set up: <span class="path">Setup<i>›</i>Card/File<i>›</i><b>Save/Restore Camera Setting</b><i>›</i>Save</span>, name it <code>DAILY</code>. Then run <code>./lumix.py backup</code> to copy it to the Mac.</p>
+        <p>That file is the only way to load a whole setup back into the camera. Names are up to 8 capitals and numbers, ten files per card, S5II only.</p>
+        <h3>Buy a bigger card</h3>
+        <p>A 128 GB V30 SDXC. That's all this body needs, even for 4K 60p. The second slot can hold a backup copy of every shot: <span class="path">Setup<i>›</i>Card/File<i>›</i><b>Double Card Slot Function</b></span>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIELD CARD ============ -->
+<section class="sheet" id="field" aria-labelledby="field-h">
+  <div class="wrap">
+    <h2 id="field-h">The field card.</h2>
+    <p class="sheet-intro">Everything above on one page. Print it, fold it, keep it in the bag.</p>
+    <p class="no-print"><button class="btn" type="button" data-print-card>Print the field card</button></p>
+
+    <article class="field-card" aria-label="Printable field card">
+      <header><strong>S5II field card</strong><span class="marker">keep in the bag</span></header>
+      <div class="cols">
+        <div>
+          <h3>The dial</h3>
+          <dl>
+            <dt>A</dt><dd>Everyday. f/2.8 people, f/8 places. Auto ISO, min 1/125, lever C.</dd>
+            <dt>C1</dt><dd>ACTION. M 1/1000 f/2.8, Auto ISO, Tracking. Drive dial to burst.</dd>
+            <dt>C2</dt><dd>LOWLIGHT. A f/1.8, min 1/100, AWBw.</dd>
+            <dt>C3</dt><dd>LOOKS. 1 WARM400 · 2 CHROME · 3 FADED · 4 GOLD200.</dd>
+            <dt>Video</dt><dd>M, 1/60 at 30p, 4K 10-bit 150 Mbps. ND in sun.</dd>
+          </dl>
+        </div>
+        <div>
+          <h3>Before you shoot</h3>
+          <ul>
+            <li>WB on AWB, not the light bulb</li>
+            <li>RAW+FINE, 3:2</li>
+            <li>Battery full, spare in a pocket</li>
+            <li>Card copied off and formatted in the camera</li>
+          </ul>
+          <h3>When it goes wrong</h3>
+          <ul>
+            <li><b>Blue:</b> <kbd>WB</kbd> to AWB</li>
+            <li><b>Blurry:</b> faster shutter, or C1</li>
+            <li><b>Grainy at night:</b> open to f/1.8 to 2.8, or C2</li>
+            <li><b>Sky blown out:</b> <kbd>+/−</kbd> to −1</li>
+            <li><b>Soft landscape:</b> f/8, not f/22</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ TIPS ============ -->
+<section class="sheet" id="tips" aria-labelledby="tips-h">
+  <div class="wrap">
+    <h2 id="tips-h">Small things worth doing once.</h2>
+    <ul class="tips">
+      <li><h3>Keep WB in the Q menu</h3><p>If it isn't there, add it: <span class="path">Custom<i>›</i>Operation<i>›</i>Q.MENU Settings<i>›</i>Item Customize (Photo)</span>. A second way in besides the button.</p></li>
+      <li><h3>Turn on the level</h3><p><span class="path">Custom<i>›</i>Monitor / Display (Photo)<i>›</i>Level Gauge</span>. It goes green when the horizon is straight.</p></li>
+      <li><h3>Shorten Auto Review</h3><p>Same menu, Auto Review, about 1 second. A glance, then back to shooting.</p></li>
+      <li><h3>See M exposure live</h3><p>Constant Preview, same menu, makes the screen show the real brightness of your M settings. Turn it off to focus in the dark.</p></li>
+      <li><h3>Name your C modes</h3><p>Edit Title takes up to 22 characters, and the name appears when you turn the dial. No more guessing what C2 was.</p></li>
+      <li><h3>Carry a spare battery</h3><p>A DMW-BLK22 is good for a few hundred shots. Cold drains it faster, so keep the spare in an inner pocket.</p></li>
+      <li><h3>Try LUMIX Lab</h3><p>After firmware 3.1+, the <a href="https://www.panasonic.com/global/consumer/lumix/lumix-lab.html">LUMIX Lab app</a> sends looks to the camera from your phone. It can't run alongside LUMIX Sync.</p></li>
+      <li><h3>Power over USB-C</h3><p>A USB-C power-delivery bank can run the camera during long video takes or time-lapses.</p></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="film">
+    <div class="wrap">
+      <p>Built from 1,093 of your own frames and Panasonic's S5II manual. Menu paths are from the firmware 3.x manual; names can shift slightly after an update.</p>
+      <ol class="sources">
+        <li><a href="https://eww.pavc.panasonic.co.jp/dscoi/DC-S5M2/html/DC-S5M2_DVQP2839_eng/0018.html">Manual: recording modes</a></li>
+        <li><a href="https://eww.pavc.panasonic.co.jp/dscoi/DC-S5M2/html/DC-S5M2_DVQP2839_eng/0068.html">Manual: white balance</a></li>
+        <li><a href="https://eww.pavc.panasonic.co.jp/dscoi/DC-S5M2/html/DC-S5M2_DVQP2839_eng/0115.html">Manual: custom modes</a></li>
+        <li><a href="https://eww.pavc.panasonic.co.jp/dscoi/DC-S5M2/html/DC-S5M2_DVQP2839_eng/0116.html">Manual: Custom menu</a></li>
+        <li><a href="https://eww.pavc.panasonic.co.jp/dscoi/DC-S5M2/html/DC-S5M2_DVQP2839_eng/0117.html">Manual: Setup menu</a></li>
+        <li><a href="https://eww.pavc.panasonic.co.jp/dscoi/DC-S5M2/html/DC-S5M2_DVQP2839_eng/0180.html">Manual: LUT base Photo Style</a></li>
+        <li><a href="https://eww.pavc.panasonic.co.jp/dscoi/DC-S5M2/html/DC-S5M2_DVQP2839_eng/0007.html">Manual: card speed classes</a></li>
+        <li><a href="https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/ff/dl/s5m2.html">Panasonic: S5II firmware</a></li>
+        <li><a href="https://www.photographyblog.com/reviews/panasonic_lumix_s_50mm_f1_8_review/sharpness_1">Photography Blog: S 50mm f/1.8 sharpness</a></li>
+        <li><a href="https://www.panasonic.com/global/consumer/lumix/lumix-lab.html">Panasonic: LUMIX Lab</a></li>
+      </ol>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
